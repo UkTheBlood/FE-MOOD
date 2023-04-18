@@ -15,7 +15,7 @@
 3. [Feature](#Feature)
 4. [Stacks](#Stacks)
 5. [Trouble Shooting](#Trouble-Shooting)
-6. [API 명세서] (#API-명세서)
+6. [API 명세서](#API-명세서)
 7. [Team](#Team)
 8. [FE Role](#FE-Role)
 
