@@ -23,7 +23,7 @@
 <br />
 
 # 🛠Architecture
-![기술적 아키텍처 완](https://user-images.githubusercontent.com/103476685/232488401-21e8ec99-7748-460f-b92c-7357f0772e08.png)
+![기술적 아키텍처](https://user-images.githubusercontent.com/103476685/233048063-e56a3e1e-a251-45ce-a174-5e56cc7e71d0.PNG)
 
 <br />
 <br />
