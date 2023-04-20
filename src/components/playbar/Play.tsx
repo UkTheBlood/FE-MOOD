@@ -46,13 +46,7 @@ function Play() {
 
   useEffect(() => {
     setTime()
-  }, [
-    data,
-    audioRef.current?.duration,
-    audioRef.current?.currentTime,
-    audioRef.current?.onloadedmetadata,
-    audioRef.current?.readyState,
-  ])
+  }, [audioRef.current?.currentTime])
 
   const calculate = useCallback((secs: number) => {
     const minutes = Math.floor(secs / 60)
