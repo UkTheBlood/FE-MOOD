@@ -272,7 +272,7 @@
 <br />
 <br />
   
-# 📑 API 명세서
+# 📑API 명세서
   [🔖 API 명세서 바로가기](https://www.notion.so/32ab485ea57e4ffdb7c2b90b0f251555?v=a4f5131a32a74d17971850d9afadabd7)
   
 <br />
