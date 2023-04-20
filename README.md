@@ -15,7 +15,7 @@
 3. [Feature](#Feature)
 4. [Stacks](#Stacks)
 5. [Trouble Shooting](#Trouble-Shooting)
-6. [API 명세서] (#API-명세서)
+6. [API 명세서](#API-명세서)
 7. [Team](#Team)
 8. [FE Role](#FE-Role)
 
@@ -23,7 +23,7 @@
 <br />
 
 # 🛠Architecture
-![기술적 아키텍처 완](https://user-images.githubusercontent.com/103476685/232488401-21e8ec99-7748-460f-b92c-7357f0772e08.png)
+![기술적 아키텍처](https://user-images.githubusercontent.com/103476685/233048063-e56a3e1e-a251-45ce-a174-5e56cc7e71d0.PNG)
 
 <br />
 <br />
@@ -156,11 +156,11 @@
     <div>
       
        1. 채팅방에서 무한 스크롤 구현 시 스크롤이 맨 위로 고정되는 문제
-        스크롤을 최상단으로 올렸을 때, 새로운 데이터들이 로딩이 되면서
-        스크롤의 위치가 최상단에서 이전 스크롤 위치로 변경돼야 한다.
+          스크롤을 최상단으로 올렸을 때, 새로운 데이터들이 로딩이 되면서
+          스크롤의 위치가 최상단에서 이전 스크롤 위치로 변경돼야 한다.
          → 즉, 데이터가 로딩이 되고 스크롤의 위치가 맨 위로 되어 있어,
-        보여지는 데이터의 값들이 순서대로 보여지지 않는데,
-        스크롤의 위치를 변경하여 순서대로 보이도록 해야 한다.
+          보여지는 데이터의 값들이 순서대로 보여지지 않는데,
+          스크롤의 위치를 변경하여 순서대로 보이도록 해야 한다.
       
       2. 접근
         1) prevScroll을 state 값으로 만들고, 들어왔을 때, scrollRef.current.scrollHeight 값으로 지정해준다.
@@ -171,15 +171,15 @@
       
       3. 해결
         - prevScroll을 시간 차를 두어 prevScroll을 지정해주어 채팅방 내역이 들어왔을 때, 
-        prevScroll을 지정할 수 있도록 setTimeout을 사용하여 해결
+          prevScroll을 지정할 수 있도록 setTimeout을 사용하여 해결
       
       4. 리팩토링
         1) prevScroll을 setTimeout으로 시간을 지정했을 때, 지정한 시간보다 이전 채팅 방 내역을 받는 시간이 긴 경우 
-        prevScroll의 지정이 늦게 될 것 같다는 생각이 들어 다른 방법을 찾아보았음.
+          prevScroll의 지정이 늦게 될 것 같다는 생각이 들어 다른 방법을 찾아보았음.
         2) prevScroll은 받아온 채팅 내역 즉, 설정해둔 state(beforeChatData)가 변경되었을 때, 
-        prevScroll을 다시 set하는 로직으로 구현하였다.
+          prevScroll을 다시 set하는 로직으로 구현하였다.
         3) 이로 인해 만약 채팅 방의 이전 내역들을 불러오는데, 시간이 걸리더라도 prevScroll이 
-        필요한 타이밍에 변경되도록 로직을 수정하였다. 
+          필요한 타이밍에 변경되도록 로직을 수정하였다. 
 
   </div>
 </details>
@@ -248,7 +248,7 @@
     <div markdown="2">
       1. 액세스 토큰 만료 시, 요청을 보내면 토큰이 갱신되지않고 에러가 발생
         - 백엔드에서 지정한 에러 status가 나오면, 리프레시 토큰을 이용하여 액세스 토큰을 갱신하고 
-        만료 시 실패한 요청을 다시 실행한다.
+          만료 시 실패한 요청을 다시 실행한다.
           → 프론트엔드는 특정 에러 status 일 경우 액세스 토큰을 갱신하고 요청을 다시 보내야 한다.
       
       2. 접근
@@ -297,7 +297,7 @@
 
 | 이재욱👑 | 이인영 | 김명주 |
 |:-:|:-:|:-:|
-| Redux를 이용하여 play bar 구현<br/> 영역 클릭을 통한 음악 추천 <br/> 설문 조사 <br/> 채팅방 | 좋아요 순/ 스트리밍 순 차트 <br/> 작곡가 별 음악 추천 <br/> 검색 기능 <br/> 음악 상세 페이지 <br/> | 소셜 / 로컬 로그인 <br/> 마이페이지 <br/> refresh token |
+| Redux를 이용하여 play bar 구현<br/> 영역 클릭을 통한 음악 추천 <br/> 설문 조사 <br/> 채팅방 <br/> aws s3, cloudfront, route53, gabia 배포 | 좋아요 순/ 스트리밍 순 차트 <br/> 작곡가 별 음악 추천 <br/> 검색 기능 <br/> 음악 상세 페이지 <br/> | 소셜 / 로컬 로그인 <br/> 마이페이지 <br/> refresh token |
 
 
 
