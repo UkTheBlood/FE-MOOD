@@ -8,7 +8,6 @@ import {
 
 const instance: AxiosInstance = axios.create({
   baseURL: process.env.REACT_APP_SERVER,
-  headers: { Authorization: onGetLocalStorage('accessToken') },
   withCredentials: true,
 })
 

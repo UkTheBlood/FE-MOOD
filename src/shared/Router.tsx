@@ -24,6 +24,7 @@ function Router() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/api/kakao/callback" element={<Auth />} />
+
         <Route element={<MusicPlayLayout />}>
           <Route path="/recommend" element={<Recommend />} />
           <Route path="/recommend/music/:id" element={<MusicDetail />} />
@@ -37,9 +38,6 @@ function Router() {
           <Route path="/mypage" element={<MyPage />} />
           <Route path="/delete" element={<MyPageDeleteDone />} />
         </Route>
-
-  
-
       </Routes>
     </BrowserRouter>
   )
