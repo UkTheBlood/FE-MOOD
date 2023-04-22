@@ -8,6 +8,7 @@ export interface UserInfo {
   confirm?: string
 }
 
+// 회원가입
 export const register = async (body: UserInfo) => {
   const response = await axios.post(
     `${process.env.REACT_APP_SERVER}/api/signUp`,
@@ -16,6 +17,7 @@ export const register = async (body: UserInfo) => {
   return response
 }
 
+// Id 중복 체크
 export const checkId = async (id?: string) => {
   const value = { id: id }
   const response = await axios.post(
@@ -25,6 +27,7 @@ export const checkId = async (id?: string) => {
   return response
 }
 
+// 닉네임 중복 체크
 export const checkNickname = async (nickname?: string) => {
   const value = { nickname: nickname }
   const response = await axios.post(
@@ -34,6 +37,7 @@ export const checkNickname = async (nickname?: string) => {
   return response
 }
 
+// 이메일 인증
 export const authEmail = async (email:string) => {
   const body ={
     email
@@ -41,6 +45,8 @@ export const authEmail = async (email:string) => {
   const response  = await axios.post(`${process.env.REACT_APP_SERVER}/api/user/email`, body)
   return response
 }
+
+// 이메일 인증
 export const checkAuthEmailNumber = async (email: string, password:string) => {
   const body = {
     email,

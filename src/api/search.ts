@@ -1,5 +1,6 @@
 import { withoutTokenInstance } from './instance'
 
+// 검색
 export const getSearch = async (keyword: string) => {
   const response = await withoutTokenInstance.get(
     `/api/music/search?keyword=${encodeURIComponent(keyword)}`
