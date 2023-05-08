@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { login } from '../../api/loginapi'
@@ -51,10 +52,10 @@ function Login() {
   const onKakaoLoginHandler = async () => {
     window.location.href = KAKAO_AUTH_URL
   }
-  
+
   return (
     <>
-      <CustomAlert 
+      <CustomAlert
         showAlert={showCustomAlert}
         onHide={() => setShowCustomAlert(false)}
         message={alertMessage}
