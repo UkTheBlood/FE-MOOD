@@ -1,12 +1,6 @@
 import React, { useRef, useState, useEffect, useCallback } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { io } from 'socket.io-client'
-import angry from '../../assets/icons/angry_brown.webp'
-import sad from '../../assets/icons/sad_brown.webp'
-import happy from '../../assets/icons/happy_brown.webp'
-import bore from '../../assets/icons/boring_brown.webp'
-import embarrass from '../../assets/icons/embarrass_brown.webp'
-import surprise from '../../assets/icons/surprise_brown.webp'
 import {
   Wrap,
   StDivChatRoomChatListContain,
@@ -33,6 +27,13 @@ import { onGetLocalStorage } from '../../util/cookie'
 import { BeforeChatData, ChatData, RecieveData } from './ChatRoomArray'
 import { expireToken } from '../../api/instance'
 import Header from '../../components/header/Header'
+
+const angry = require('../../assets/icons/angry_brown.webp')
+const sad = require('../../assets/icons/sad_brown.webp')
+const bore = require('../../assets/icons/boring_brown.webp')
+const embarrass = require('../../assets/icons/embarrass_brown.webp')
+const happy = require('../../assets/icons/happy_brown.webp')
+const surprise = require('../../assets/icons/surprise_brown.webp')
 
 const socket = io(`${process.env.REACT_APP_SERVER}`, {
   transports: ['websocket'],

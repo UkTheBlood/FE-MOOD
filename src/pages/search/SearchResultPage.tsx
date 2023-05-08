@@ -33,7 +33,8 @@ import {
 import { setMusicPlay } from '../../redux/modules/musicPlayer'
 import { RootState } from '../../redux/config/configStore'
 import { onGetLocalStorage } from '../../util/cookie'
-import CustomAlert from '../../components/alret/CustomAlert'
+
+const CustomAlert = require('../../components/alert/CustomAlert')
 
 interface ComposerInfo {
   composerId: number

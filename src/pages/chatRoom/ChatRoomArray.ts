@@ -1,20 +1,21 @@
-import angry from '../../assets/icons/angry_brown.webp'
-import angryHover from '../../assets/icons/angry_white.webp'
+const angry = require('../../assets/icons/angry_brown.webp')
+const angryHover = require('../../assets/icons/angry_white.webp')
 
-import sad from '../../assets/icons/sad_brown.webp'
-import sadHover from '../../assets/icons/sad_white.webp'
+const sad = require('../../assets/icons/sad_brown.webp')
+const sadHover = require('../../assets/icons/sad_white.webp')
 
-import happy from '../../assets/icons/happy_brown.webp'
-import happyHover from '../../assets/icons/happy_white.webp'
+const happy = require('../../assets/icons/happy_brown.webp')
+const happyHover = require('../../assets/icons/happy_white.webp')
 
-import bore from '../../assets/icons/boring_brown.webp'
-import boreHover from '../../assets/icons/boring_white.webp'
+const bore = require('../../assets/icons/boring_brown.webp')
+const boreHover = require('../../assets/icons/boring_white.webp')
 
-import embarrass from '../../assets/icons/embarrass_brown.webp'
-import embarrassHover from '../../assets/icons/embarrass_white.webp'
+const embarrass = require('../../assets/icons/embarrass_brown.webp')
+const embarrassHover = require('../../assets/icons/embarrass_white.webp')
 
-import surprise from '../../assets/icons/surprise_brown.webp'
-import surpriseHover from '../../assets/icons/surprise_white.webp'
+const surprise = require('../../assets/icons/surprise_brown.webp')
+const surpriseHover = require('../../assets/icons/surprise_white.webp')
+
 
 export const roomArray = [
   {

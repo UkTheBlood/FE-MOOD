@@ -20,7 +20,8 @@ import {
   StSpanCurrentSlide,
   StDivCarouselBtn,
 } from './SurveySt'
-import CustomAlert from '../../components/alret/CustomAlert'
+
+const CustomAlert = require('../../components/alert/CustomAlert')
 
 function Survey() {
   const [survey, setSurvey] = useState<SurveyData>({
