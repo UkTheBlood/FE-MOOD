@@ -20,7 +20,7 @@ import baseProifle from '../../assets/icons/Heart_fill_white copy.png'
 import { BsPlusLg } from 'react-icons/bs'
 import { onSetLocalStorageHandler } from '../../util/cookie'
 import { checkNickname } from '../../api/signup'
-import CustomAlert from '../alret/CustomAlert'
+import CustomAlert from '../alert/CustomAlert'
 function MyPageEdits() {
   const queryClient = useQueryClient()
   const imgRef: any = useRef<HTMLInputElement | null>(null)

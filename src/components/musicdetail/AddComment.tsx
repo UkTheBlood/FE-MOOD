@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState, useCallback } from 'react'
 import { useMutation, useQueryClient } from 'react-query'
 import { addComment } from '../../api/comments'
@@ -10,7 +11,7 @@ import {
   InputAreaBottom,
 } from '../../pages/musicDetail/MusicDetailSt'
 import { onGetLocalStorage } from '../../util/cookie'
-import CustomAlert from '../alret/CustomAlert'
+import CustomAlert from '../alert/CustomAlert'
 
 interface Props {
   musicId: number

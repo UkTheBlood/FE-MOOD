@@ -26,7 +26,7 @@ import {
   authEmail,
   checkAuthEmailNumber
 } from '../../api/signup'
-import CustomAlert from '../alret/CustomAlert'
+import CustomAlert from '../alert/CustomAlert'
 function MyPageDeletes() {
   const navigate = useNavigate()
   const [alertMessage, setAlertMessage] = useState('')

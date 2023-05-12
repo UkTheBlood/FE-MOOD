@@ -33,7 +33,8 @@ import {
 } from './ComposerListSt'
 import { RootState } from '../../redux/config/configStore'
 import { onGetLocalStorage } from '../../util/cookie'
-import CustomAlert from '../alret/CustomAlert'
+
+const CustomAlert = require('../alert/CustomAlert')
 
 interface MusicInfo {
   musicId: number

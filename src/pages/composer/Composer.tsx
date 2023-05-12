@@ -1,3 +1,4 @@
+import React from 'react'
 import ComposerList from '../../components/composer/ComposerList'
 import Header from '../../components/header/Header'
 import Wrapper from '../../components/Wrapper'

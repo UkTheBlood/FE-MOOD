@@ -26,7 +26,8 @@ import {
 } from '../../api/signup'
 import { useNavigate } from 'react-router-dom'
 import Header from '../../components/header/Header'
-import CustomAlert from '../../components/alret/CustomAlert'
+
+const CustomAlert = require('../../components/alert/CustomAlert')
 
 function SignUp() {
 

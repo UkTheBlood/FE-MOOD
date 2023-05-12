@@ -1,3 +1,4 @@
+import React from 'react'
 import { useCallback, useState } from 'react'
 import { useMutation, useQueryClient } from 'react-query'
 import { addRecomment } from '../../api/comments'
@@ -8,7 +9,7 @@ import {
   ReCommentBtn,
 } from '../../pages/musicDetail/MusicDetailSt'
 import { onGetLocalStorage } from '../../util/cookie'
-import CustomAlert from '../alret/CustomAlert'
+import CustomAlert from '../alert/CustomAlert'
 
 function AddRecomment({ reviewId }: { reviewId: number }) {
   const [comment, setComment] = useState<string>('')

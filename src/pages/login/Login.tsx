@@ -1,7 +1,7 @@
+import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { login } from '../../api/loginapi'
-import kakao from '../../assets/images/kakao_login_large_wide.png'
 import Header from '../../components/header/Header'
 import jwt_Decode from 'jwt-decode'
 import { onSetCookieHandler, onSetLocalStorageHandler } from '../../util/cookie'
@@ -15,7 +15,11 @@ import {
   LoginLabelDiv,
   LoginSocialContainer,
 } from './loginSt'
-import CustomAlert from '../../components/alret/CustomAlert'
+// import CustomAlert from '../../components/alret/CustomAlert'
+
+const kakao = require('../../assets/images/kakao_login_large_wide.png')
+const CustomAlert = require('../../components/alert/CustomAlert')
+
 function Login() {
   const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${process.env.REACT_APP_KAKAO_REST_API_KEY}&redirect_uri=${process.env.REACT_APP_KAKAO_REDIRECT_URI}&response_type=code`
 
@@ -51,10 +55,10 @@ function Login() {
   const onKakaoLoginHandler = async () => {
     window.location.href = KAKAO_AUTH_URL
   }
-  
+
   return (
     <>
-      <CustomAlert 
+      <CustomAlert
         showAlert={showCustomAlert}
         onHide={() => setShowCustomAlert(false)}
         message={alertMessage}

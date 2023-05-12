@@ -3,7 +3,7 @@ import Heart from '../../assets/icons/Heart_brown.png'
 import FillHeart from '../../assets/icons/Heart_fill_brown.png'
 import { toggleLike } from '../../api/chart'
 import { LikeWrap } from './LikeSt'
-import CustomAlert from '../alret/CustomAlert'
+import CustomAlert from '../alert/CustomAlert'
 import { onGetLocalStorage } from '../../util/cookie'
 
 

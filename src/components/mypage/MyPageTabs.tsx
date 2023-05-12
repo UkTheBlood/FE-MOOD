@@ -1,3 +1,4 @@
+import React from 'react'
 import MyPageScraps from './MyPageScraps'
 import MyPageComments from './MyPageComments'
 import MyPageLikes from './MyPageLikes'
